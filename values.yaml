@@ -23,23 +23,23 @@ service:
 
 # Konga default configuration
 config: {}
-#   port: 1337
-#   node_env: development
-#   ssl_key_path:
-#   ssl_crt_path:
-#   konga_hook_timeout: 60000
-#   db_adapter: postgres
-#   db_uri:
-#   db_host: localhost
-#   db_port: 5432
-#   db_user:
-#   db_password:
-#   db_database: konga_database
-#   db_pg_schema: public
-#   log_level: debug
-#   token_secret:
-#   konga_node_data:
-#   konga_user_data:
+port: 1337
+node_env: development
+ssl_key_path:
+ssl_crt_path:
+konga_hook_timeout: 60000
+db_adapter: postgres
+db_uri:
+db_host: localhost
+db_port: 5432
+db_user: root
+db_password: 123456
+db_database: konga_database
+db_pg_schema: public
+log_level: debug
+token_secret:
+konga_node_data:
+konga_user_data:
 
 # LDAP configuration for Konga
 ldap: {}
@@ -108,4 +108,4 @@ podAnnotations:
   # These annotations make sure no sidecar contaienr injected into
   # Konga pods
   sidecar.istio.io/inject: false
-  consul.hashicorp.com/connect-inject": false
+  consul.hashicorp.com/connect-inject: false

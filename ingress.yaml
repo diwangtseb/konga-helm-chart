@@ -2,12 +2,12 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: konga-ingress
-  namespace: kong
+  namespace: ingress-kong
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-  - host: konga.yourdomain.com
+  - host: localhost
     http:
       paths:
       - path: "/"
